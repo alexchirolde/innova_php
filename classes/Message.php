@@ -3,108 +3,75 @@
 
 class Message
 {
-    public $conversationId;
-    public $messageFrom;
-    public $messageTo;
-    public $messageText;
-    public $dateAdd;
+    private $con;
 
-    /**
-     * Message constructor.
-     * @param $conversationId
-     * @param $messageFrom
-     * @param $messageTo
-     * @param $messageText
-     * @param $dateAdd
-     */
-    public function __construct($conversationId, $messageFrom, $messageTo, $messageText, $dateAdd)
+    public function __construct($con){
+        $this->con = $con;
+    }
+    public function getMessagesFromConversation($conversationId, $offset)
     {
-        $this->conversationId = $conversationId;
-        $this->messageFrom = $messageFrom;
-        $this->messageTo = $messageTo;
-        $this->messageText = $messageText;
-        $this->dateAdd = $dateAdd;
+        $return_arr = array();
+        $messageInConversation = $this->con->connection()->query("
+            SELECT
+                pf.name AS messageFrom,
+                pf.avatar AS avatar,
+                pf.id AS messageFromId,
+                pf.date_add AS messageFromDateAdd,
+                m.message_text AS messageFromText,
+                pt.name AS messageTo,
+                pt.avatar AS avatar,
+                pt.id AS messageToId,
+                m.date_add AS messageToDateAdd
+            FROM
+                messages m
+                LEFT JOIN participant pf ON m.message_from = pf.id
+                LEFT JOIN participant pt ON m.message_to = pt.id
+            WHERE
+                m.conversation_id = '" . $conversationId . "'
+            ORDER BY
+                m.date_add ASC
+            LIMIT 5 
+            
+            OFFSET $offset
+        ");
+
+        while ($row = mysqli_fetch_array($messageInConversation)) {
+
+            if ($row['messageFromId'] != TEST_PARTICIPANT)
+                $messageFrom = ["messageFromId" => $row['messageFromId']];
+            else
+                $messageFrom = ["Yo" => $row['messageFromId']];
+            $return_arr[] = array(
+                $messageFrom,
+                'avatar' => $row['avatar'],
+                "messageFrom" => $row['messageFrom'],
+                "messageFromId" => $row['messageFromId'],
+                "messageFromDateAdd" => $row['messageFromDateAdd'],
+                "messageFromText" => $row['messageFromText'],
+                "messageToId" => $row['messageToId'],
+                "messageTo" => $row['messageTo'],
+                "messageToDateAdd" => $row['messageToDateAdd'],
+            );
+
+        }
+        $this->con->connection()->close();
+        return $return_arr;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getConversationId()
+    public function saveNewMessage($conversationId, $messageTo, $messageText)
     {
-        return $this->conversationId;
-    }
+        $dateAdd = date('Y-m-d H:i:s');
 
-    /**
-     * @param mixed $conversationId
-     */
-    public function setConversationId($conversationId): void
-    {
-        $this->conversationId = $conversationId;
-    }
+        $this->con->connection()->query("
+            INSERT INTO messages (conversation_id, message_from, message_to, message_text, date_add) 
+            VALUES ('".$conversationId."', '".TEST_PARTICIPANT."','".$messageTo."','".$messageText."', '".$dateAdd."')
+        ");
+        $this->con->connection()->close();
 
-    /**
-     * @return mixed
-     */
-    public function getMessageFrom()
-    {
-        return $this->messageFrom;
-    }
+        return array(
+            'status' => 'Message sent!'
+        );
 
-    /**
-     * @param mixed $messageFrom
-     */
-    public function setMessageFrom($messageFrom): void
-    {
-        $this->messageFrom = $messageFrom;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getMessageTo()
-    {
-        return $this->messageTo;
-    }
-
-    /**
-     * @param mixed $messageTo
-     */
-    public function setMessageTo($messageTo): void
-    {
-        $this->messageTo = $messageTo;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMessageText()
-    {
-        return $this->messageText;
-    }
-
-    /**
-     * @param mixed $messageText
-     */
-    public function setMessageText($messageText): void
-    {
-        $this->messageText = $messageText;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDateAdd()
-    {
-        return $this->dateAdd;
-    }
-
-    /**
-     * @param mixed $dateAdd
-     */
-    public function setDateAdd($dateAdd): void
-    {
-        $this->dateAdd = $dateAdd;
-    }
-
 
 }

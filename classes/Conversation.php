@@ -1,17 +1,18 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-
-
 
 class Conversation
 {
+    private $con;
+
+    public function __construct($con){
+        $this->con = $con;
+    }
     public function getConversations($limit, $offset)
     {
         $arr = array();
         $return_arr = array();
-        $con = new Database();
-        $participantConversations = $con->connection()->query("
+        $participantConversations = $this->con->connection()->query("
             SELECT
 	            conversation_id
             FROM
@@ -22,7 +23,7 @@ class Conversation
             $arr[] = $id['conversation_id'];
         }
         $tmp = implode(',', $arr);
-        $participants = $con->connection()->query("
+        $participants = $this->con->connection()->query("
             SELECT 
                 t0.id AS id, t0.name AS name, t0.avatar AS avatar, conversation_participant.conversation_id as conversationId
             FROM 
@@ -37,6 +38,8 @@ class Conversation
                 ($tmp)
             AND 
                 t0.id <> '".TEST_PARTICIPANT."'
+            ORDER BY
+                conversation_participant.conversation_id ASC
             
             LIMIT $limit 
             
@@ -50,6 +53,7 @@ class Conversation
                 "avatar" => $row['avatar'],
                 "conversationId" => $row['conversationId']);
         }
+        $this->con->connection()->close();
         return $return_arr;
     }
 

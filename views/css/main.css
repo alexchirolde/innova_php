@@ -10,3 +10,6 @@
 .conversations-wrapper {
     height: 75vh;
 }
+.quill-editor{
+    height: 50px;
+}

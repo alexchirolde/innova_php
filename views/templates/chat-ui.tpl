@@ -15,23 +15,6 @@
     <div class="container p-4 border border-dark main-wrapper">
         <div class="row flex-xl-nowrap">
             <aside class="col-12 col-md-3 col-xl-3 border-dark border p-3 overflow-auto conversations-wrapper">
-{*                {% for conversationId, participant in conversations %}*}
-{*                {% for p in participant %}*}
-{*                {% if p.id != currentParticipant %}*}
-{*                <div class="row my-2">*}
-{*                    <div class="col-sm-3">*}
-{*                        <img src="{{ p.avatar }}" alt="">*}
-{*                    </div>*}
-{*                    <div class="col-sm-9">*}
-
-{*                        <a href="#" class="participant"*}
-{*                           data-id="{{ conversationId }}">{{ p.name }}</a>*}
-{*                    </div>*}
-{*                </div>*}
-{*                <div class="border-dark border"></div>*}
-{*                {% endif %}*}
-{*                {% endfor %}*}
-{*                {% endfor %}*}
                 <template id="participant-conversation">
                     <div class="row my-2">
                         <div class="col-sm-3">

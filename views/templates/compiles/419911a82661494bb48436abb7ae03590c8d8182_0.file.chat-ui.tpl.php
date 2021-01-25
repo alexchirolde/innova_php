@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-23 22:44:09
+/* Smarty version 3.1.38, created on 2021-01-25 20:33:20
   from '/Volumes/DATA/WORK/pruebas-php/views/templates/chat-ui.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600ca6b9b341d7_79090300',
+  'unifunc' => 'content_600f2b10955769_50937475',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '419911a82661494bb48436abb7ae03590c8d8182' => 
     array (
       0 => '/Volumes/DATA/WORK/pruebas-php/views/templates/chat-ui.tpl',
-      1 => 1611441848,
+      1 => 1611605910,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600ca6b9b341d7_79090300 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600f2b10955769_50937475 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html lang="en">
 <head>
     <title>Chat test</title>
@@ -38,7 +38,6 @@ function content_600ca6b9b341d7_79090300 (Smarty_Internal_Template $_smarty_tpl)
     <div class="container p-4 border border-dark main-wrapper">
         <div class="row flex-xl-nowrap">
             <aside class="col-12 col-md-3 col-xl-3 border-dark border p-3 overflow-auto conversations-wrapper">
-
                 <template id="participant-conversation">
                     <div class="row my-2">
                         <div class="col-sm-3">

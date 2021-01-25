@@ -17,10 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a969398b-f579-4d9b-90ac-d3a3536b5337" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/MessagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Conversation.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Conversation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/fixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/fixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/ConversationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ConversationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/templates/chat-ui.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/chat-ui.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/templates/compiles/419911a82661494bb48436abb7ae03590c8d8182_0.file.chat-ui.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/compiles/419911a82661494bb48436abb7ae03590c8d8182_0.file.chat-ui.tpl.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/controllers" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -68,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controllers" />
       <recent name="$PROJECT_DIR$/views/js" />
       <recent name="$PROJECT_DIR$/views/css" />
       <recent name="$PROJECT_DIR$/classes" />
@@ -103,7 +109,9 @@
       <workItem from="1611346682020" duration="1517000" />
       <workItem from="1611353098772" duration="3586000" />
       <workItem from="1611357731171" duration="11290000" />
-      <workItem from="1611429895353" duration="10469000" />
+      <workItem from="1611429895353" duration="11295000" />
+      <workItem from="1611590179734" duration="953000" />
+      <workItem from="1611595970514" duration="8757000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610846107692</created>
@@ -126,11 +134,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611548374623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added different avatars for participants and conversationId on conversation request">
+      <created>1611551858270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611551858270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -160,7 +185,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Working ajax call with conversation_participant table" />
     <MESSAGE value="exclude files" />
-    <option name="LAST_COMMIT_MESSAGE" value="exclude files" />
+    <MESSAGE value="Added different avatars for participants and conversationId on conversation request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added different avatars for participants and conversationId on conversation request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="172" key="#CLI_Interpreters" timestamp="1611091650487">
@@ -183,10 +209,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611262728052" />
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611548374488">
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611551858121">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611548374488" />
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611551858121" />
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1611607370384">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1611607370384" />
     <state width="1638" height="290" key="GridCell.Tab.0.bottom" timestamp="1611429103569">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -231,10 +261,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="256" y="125" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1611091654376" />
-    <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611434358929">
+    <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611597699498">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611434358929" />
+    <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611597699498" />
     <state x="377" y="179" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611271470952">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
