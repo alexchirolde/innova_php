@@ -60,7 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/controllers" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -103,7 +103,7 @@
       <workItem from="1611357731171" duration="11290000" />
       <workItem from="1611429895353" duration="11295000" />
       <workItem from="1611590179734" duration="953000" />
-      <workItem from="1611595970514" duration="9317000" />
+      <workItem from="1611595970514" duration="10077000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610846107692</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611610823377</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added mysql dump">
+      <created>1611611546805</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611611546805</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +193,8 @@
     <MESSAGE value="exclude files" />
     <MESSAGE value="Added different avatars for participants and conversationId on conversation request" />
     <MESSAGE value="Added send message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added send message" />
+    <MESSAGE value="Added mysql dump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mysql dump" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="172" key="#CLI_Interpreters" timestamp="1611091650487">
@@ -209,10 +217,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611262728052" />
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611610823091">
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611611546643">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611610823091" />
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611611546643" />
     <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1611607370384">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -257,18 +265,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="451" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1611356407290" />
-    <state x="256" y="125" key="SettingsEditor" timestamp="1611091654376">
+    <state x="256" y="125" key="SettingsEditor" timestamp="1611611890577">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="256" y="125" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1611091654376" />
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611611336312">
+    <state x="256" y="125" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1611611890577" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611612151780">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1611611336312" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1611612151780" />
     <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611597699498">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611597699498" />
+    <state x="636" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611612147037">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="636" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1611612147037" />
     <state x="377" y="179" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611271470952">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
