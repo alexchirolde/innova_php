@@ -16,41 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a969398b-f579-4d9b-90ac-d3a3536b5337" name="Default Changelist" comment="exclude smarty package">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat_test.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Conversation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Participant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/fixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/ConversationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/quill.bubble.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/css/quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/quill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/quill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/js/quill.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/templates/chat-ui.tpl" afterDir="false" />
+    <list default="true" id="a969398b-f579-4d9b-90ac-d3a3536b5337" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Conversation.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Conversation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/fixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/fixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +103,7 @@
       <workItem from="1611346682020" duration="1517000" />
       <workItem from="1611353098772" duration="3586000" />
       <workItem from="1611357731171" duration="11290000" />
-      <workItem from="1611429895353" duration="8053000" />
+      <workItem from="1611429895353" duration="10469000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610846107692</created>
@@ -142,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610846107692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working ajax call with conversation_participant table">
+      <created>1611548343691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611548343691</updated>
+    </task>
+    <task id="LOCAL-00003" summary="exclude files">
+      <created>1611548374623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611548374623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +158,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Working ajax call with conversation_participant table" />
+    <MESSAGE value="exclude files" />
+    <option name="LAST_COMMIT_MESSAGE" value="exclude files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="172" key="#CLI_Interpreters" timestamp="1611091650487">
@@ -197,10 +183,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611262728052" />
-    <state x="373" y="14" key="CommitChangelistDialog2" timestamp="1610921770624">
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611548374488">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="373" y="14" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1610921770624" />
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611548374488" />
     <state width="1638" height="290" key="GridCell.Tab.0.bottom" timestamp="1611429103569">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

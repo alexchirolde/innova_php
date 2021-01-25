@@ -56,11 +56,11 @@ class DataBaseGenerator
     {
 
         $this->connection->query("INSERT INTO participant (id, name, avatar, date_add) VALUES 
-                                ('" . TEST_PARTICIPANT . "', 'User Test','https://via.placeholder.com/40', '" . $this->dateAdd . "')");
+                                ('" . TEST_PARTICIPANT . "', 'User Test','https://i.pravatar.cc/40?u=1', '" . $this->dateAdd . "')");
         for ($i = 1; $i < 10; $i++) {
             if ($i != TEST_PARTICIPANT)
                 $this->connection->query("INSERT INTO participant (id, name, avatar, date_add) VALUES 
-                                ($i, 'Participant_" . $i . "','https://via.placeholder.com/40', '" . $this->dateAdd . "')");
+                                ($i, 'Participant_" . $i . "','https://i.pravatar.cc/40?u=' '".$i++."', '" . $this->dateAdd . "')");
         }
 
     }

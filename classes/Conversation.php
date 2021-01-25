@@ -24,7 +24,7 @@ class Conversation
         $tmp = implode(',', $arr);
         $participants = $con->connection()->query("
             SELECT 
-                t0.id AS id, t0.name AS name, t0.avatar AS avatar
+                t0.id AS id, t0.name AS name, t0.avatar AS avatar, conversation_participant.conversation_id as conversationId
             FROM 
                 participant t0 
             INNER JOIN 
@@ -47,7 +47,8 @@ class Conversation
             $return_arr[] = array(
                 "id" => $row['id'],
                 "name" => $row['name'],
-                "avatar" => $row['avatar']);
+                "avatar" => $row['avatar'],
+                "conversationId" => $row['conversationId']);
         }
         return $return_arr;
     }
