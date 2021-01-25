@@ -1,0 +1,12 @@
+.chat-wrapper, aside {
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.main-wrapper {
+    height: 90vh;
+}
+
+.conversations-wrapper {
+    height: 75vh;
+}
