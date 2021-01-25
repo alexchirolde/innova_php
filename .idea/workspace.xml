@@ -17,15 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a969398b-f579-4d9b-90ac-d3a3536b5337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/MessagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Conversation.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Conversation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ConversationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ConversationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/templates/chat-ui.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/chat-ui.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/templates/compiles/419911a82661494bb48436abb7ae03590c8d8182_0.file.chat-ui.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/compiles/419911a82661494bb48436abb7ae03590c8d8182_0.file.chat-ui.tpl.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +103,7 @@
       <workItem from="1611357731171" duration="11290000" />
       <workItem from="1611429895353" duration="11295000" />
       <workItem from="1611590179734" duration="953000" />
-      <workItem from="1611595970514" duration="8757000" />
+      <workItem from="1611595970514" duration="9317000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1610846107692</created>
@@ -141,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611551858270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added send message">
+      <created>1611610823376</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611610823377</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +185,8 @@
     <MESSAGE value="Working ajax call with conversation_participant table" />
     <MESSAGE value="exclude files" />
     <MESSAGE value="Added different avatars for participants and conversationId on conversation request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added different avatars for participants and conversationId on conversation request" />
+    <MESSAGE value="Added send message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added send message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="172" key="#CLI_Interpreters" timestamp="1611091650487">
@@ -209,10 +209,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1611262728052" />
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611551858121">
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2" timestamp="1611610823091">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611551858121" />
+    <state x="373" y="23" width="846" height="982" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1611610823091" />
     <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1611607370384">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -261,6 +261,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="256" y="125" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1611091654376" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1611611336312">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1611611336312" />
     <state x="485" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611597699498">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
